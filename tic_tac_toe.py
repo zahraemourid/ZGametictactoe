@@ -15,7 +15,7 @@ class TicTacToe(GridLayout):
         self.padding = 10
 
         with self.canvas.before:
-            Color(0.9, 0.7, 1, 1)  # Light purple background color
+            Color(0.9, 0.7, 1, 1)
             self.rect = Rectangle(size=self.size, pos=self.pos)
 
         for i in range(3):
@@ -54,7 +54,6 @@ class TicTacToe(GridLayout):
         return False
 
     def show_popup(self, message):
-        # Use Button instead of Label for better emoji rendering
         popup_content = Button(text=message, font_size=24, color=(0, 0, 0, 1),
                                background_normal='', background_color=(1, 1, 1, 1))  # White background for the popup
         popup = Popup(title='Game Over', content=popup_content,
