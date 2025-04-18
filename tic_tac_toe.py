@@ -53,6 +53,7 @@ class TicTacToe(GridLayout):
             return True
         return False
 
+    
     def show_popup(self, message):
         popup_content = Button(text=message, font_size=24, color=(0, 0, 0, 1),
                                background_normal='', background_color=(1, 1, 1, 1))  # White background for the popup
