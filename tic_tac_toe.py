@@ -56,7 +56,7 @@ class TicTacToe(GridLayout):
     
     def show_popup(self, message):
         popup_content = Button(text=message, font_size=24, color=(0, 0, 0, 1),
-                               background_normal='', background_color=(1, 1, 1, 1))  # White background for the popup
+                               background_normal='', background_color=(1, 1, 1, 1))   
         popup = Popup(title='Game Over', content=popup_content,
                       size_hint=(None, None), size=(300, 200))
         popup.open()
