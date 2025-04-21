@@ -20,7 +20,7 @@ class TicTacToe(GridLayout):
 
         for i in range(3):
             for j in range(3):
-                btn = Button(font_size=50, background_normal='', background_color=(1, 1, 1, 1))  # White button background
+                btn = Button(font_size=50, background_normal='', background_color=(1, 1, 1, 1))  
                 btn.bind(on_press=self.make_move(i, j, btn))
                 self.add_widget(btn)
 
