@@ -29,7 +29,7 @@ class TicTacToe(GridLayout):
             if self.board[i][j] == "":
                 self.board[i][j] = self.current
                 btn.text = self.current
-                btn.color = (1, 0, 0, 1) if self.current == "X" else (0, 0, 1, 1)  # Red for X, Blue for O
+                btn.color = (1, 0, 0, 1) if self.current == "X" else (0, 0, 1, 1)  
                 if self.check_winner():
                     self.show_popup(f"{self.current} wins! 🎉")
                     self.reset()
